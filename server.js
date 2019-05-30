@@ -4,7 +4,7 @@ const express = require("express");
 
 //set up express
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 //set up data parsing
 app.use(express.urlencoded({ extended: true }));
