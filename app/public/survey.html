@@ -11,9 +11,221 @@
 </head>
 <body>
     <div class="container">
-        <h1>Survey</h1>
+        <div class="container">
 
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates neque debitis perspiciatis libero enim cupiditate mollitia nisi obcaecati adipisci fugiat, voluptatum similique. Rerum obcaecati itaque aperiam natus ex vitae minus?
+            <h2>Survey Questions</h2>
+            <hr>
+        
+            <h3><strong>About You</strong></h3>
+            <h4>Name (Required)</h4>
+            <input type="text" id="name" class="form-control" required>
+        
+            <h4>Link to Image (Required)</h4>
+            <input type="text" id="photo" class="form-control" required>
+        
+            <hr>
+        
+            <h3><strong>Question 1</strong></h3>
+            <h4>You consider yourself a morning person.</h4>
+            <select class="chosen-select" id="ques1">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+            <h3><strong>Question 2</strong></h3>
+            <h4>You believe in equality for all people.</h4>
+            <select class="chosen-select" id="ques2">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+        
+            <h3><strong>Question 3</strong></h3>
+            <h4>You tend to deal with deadlines as quickly as possible.</h4>
+            <select class="chosen-select" id="ques3">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+        
+            <h3><strong>Question 4</strong></h3>
+            <h4>You are excited about expoloring the world around you.</h4>
+            <select class="chosen-select" id="ques4">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+        
+            <h3><strong>Question 5</strong></h3>
+            <h4>You are sensitive to other people’s opinions about you.</h4>
+            <select class="chosen-select" id="ques5">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+        
+            <h3><strong>Question 6</strong></h3>
+            <h4>You consider yourself to be an empathetic person.</h4>
+            <select class="chosen-select" id="ques6">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+        
+            <h3><strong>Question 7</strong></h3>
+            <h4>You believe that facts are more important than opinions.</h4>
+            <select class="chosen-select" id="ques7">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+            <h3><strong>Question 8</strong></h3>
+            <h4>You consider a strong imagination to be an important asset.</h4>
+            <select class="chosen-select" id="ques8">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+            <h3><strong>Question 9</strong></h3>
+            <h4>You would rather settle down with a book than go out and party.</h4>
+            <select class="chosen-select" id="ques9">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+            <h3><strong>Question 10</strong></h3>
+            <h4>You recharge by spending time alone and relaxing.</h4>
+            <select class="chosen-select" id="ques10">
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+        
+            <br>
+            <br>
+        
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+             Submit</button>
+        
+            <hr>
+            <footer class="footer">
+              <div class="container">
+                <p><a href="/api/friends">API Friends List</a> </p>
+              </div>
+            </footer>
+        
+          </div>
+        
+          <div id="results-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+        
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h2 class="modal-title"><strong>Best Match</strong></h2>
+                </div>
+                <div class="modal-body">
+                  <h2 id="match-name"></h2>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+
+        
     </div>
+
+    <script type="text/javascript">
+    
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+
+      function checkForm() {
+        var isValid = true;
+        $(".form-control").each(function() {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+
+        $(".chosen-select").each(function() {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        return isValid;
+
+        if (checkForm()) {
+          var userInfo = {
+          name: $("#name").val(),
+          photo: $("#photo").val(),
+          scores: [
+            $("#ques1").val(),
+            $("#ques2").val(),
+            $("#ques3").val(),
+            $("#ques4").val(),
+            $("#ques5").val(),
+            $("#ques6").val(),
+            $("#ques7").val(),
+            $("#ques8").val(),
+            $("#ques9").val(),
+            $("#ques10").val()
+          ]
+        };
+
+        $.post("/api/friends", userData, function(data) {
+
+            console.log(userInfo)
+          });
+        }
+         
+        
+      }
+      
+    });
+    
+    </script>
 </body>
 </html>

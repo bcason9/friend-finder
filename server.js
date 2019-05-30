@@ -1,6 +1,6 @@
 //dependencies
 const express = require("express");
-const path = require("path");
+//const path = require("path");
 
 //set up express
 const app = express();
@@ -14,6 +14,12 @@ app.use(express.json());
 //require("./app/routing/htmlRoutes")(app);
 
 //let server = express.createServer(handleRequest);
+
+//require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
+
+
+
 
 app.listen(PORT, function() {
     console.log("Listening on: http://localhost:" + PORT);
