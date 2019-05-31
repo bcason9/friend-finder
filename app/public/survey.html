@@ -181,23 +181,26 @@
     
     $("#submit").on("click", function(event) {
       event.preventDefault();
+      
+      // function checkForm() {
+      //   var isValid = true;
+      //   $(".form-control").each(function() {
+      //     if ($(this).val() === "") {
+      //       isValid = false;
+      //     } else {
+      //       isValid = true;
+      //     }
+      //   });
 
-      function checkForm() {
-        var isValid = true;
-        $(".form-control").each(function() {
-          if ($(this).val() === "") {
-            isValid = false;
-          }
-        });
-
-        $(".chosen-select").each(function() {
-          if ($(this).val() === "") {
-            isValid = false;
-          }
-        });
-        return isValid;
-
-        if (checkForm()) {
+      //   $(".chosen-select").each(function() {
+      //     if ($(this).val() === "") {
+      //       isValid = false;
+      //     } else {
+      //       isValid = true;
+      //     }
+      //   });
+        //return isValid;
+       // if (true) {
           var userInfo = {
           name: $("#name").val(),
           photo: $("#photo").val(),
@@ -215,14 +218,20 @@
           ]
         };
 
-        $.post("/api/friends", userData, function(data) {
+        console.log(userInfo);
 
-            console.log(userInfo)
-          });
-        }
+        $.ajax({
+          url: "/api/friends",
+          method: "POST",
+          data: userInfo
+        })
+        .then(function(data) {
+          console.log(data)
+        });
+        //}
          
         
-      }
+      //}
       
     });
     

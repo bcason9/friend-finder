@@ -15,7 +15,7 @@ app.use(express.json());
 
 //let server = express.createServer(handleRequest);
 
-//require("./app/routing/apiRoutes")(app);
+require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
 
