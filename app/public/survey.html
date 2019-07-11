@@ -13,7 +13,12 @@
 </head>
 <style>
   body {
-    background-color: rgb(178, 252, 244)
+    background-color: rgb(178, 252, 244);
+  }
+
+  img {
+    height: 200px;
+    width: 250px;
   }
 
 </style>
@@ -162,8 +167,8 @@
             <br>
             <br>
         
-            <button type="submit" class="btn btn-success btn-lg btn-block" id="submit">Submit</button>
-             <button type="submit" class="btn btn-success btn-lg btn-block" id="reset">Start over</button>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
+             <button type="submit" class="btn btn-primary btn-lg btn-block" id="reset">Start over</button>
 
 
 
@@ -240,7 +245,7 @@
           $("#submit").hide();
           $("#result-div").show();
           $("#reset").show();
-          $("#match-name").append("<h2>Match Name: " + data.friendName + "<br>Photo: " + data.friendImage + "</h2>");
+          $("#match-name").append("<h2>Match Name: " + data.friendName + "<br>Photo:<br><img src='"+ data.friendImage +"' class='rounded mx-auto d-block' alt=''>"  + "</h2>");
         });
         
       } else {
