@@ -1,7 +1,7 @@
 let friendsData = [
     {
         "name": "Casey",
-        "photo": "link to photo",
+        "photo": "https://i.kym-cdn.com/entries/icons/original/000/027/963/2.jpg",
         "scores": [
           "5",
           "5",
@@ -18,7 +18,7 @@ let friendsData = [
     },
     {
       "name": "Joe",
-      "photo": "link to photo",
+      "photo": "https://i.kym-cdn.com/entries/icons/original/000/029/837/cover2.jpg",
       "scores": [
         "3",
         "5",
