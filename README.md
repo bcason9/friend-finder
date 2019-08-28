@@ -1,6 +1,6 @@
 # Friend-Finder
 
-This is an app which runs in node using express and is hosted on heroku. It is meant to function as an app to identify people with similar personality traits to the user. It is now up and running.
+This is an app which runs in node using express and is hosted on heroku. This app helps to identify other people with similar personality traits to the user.
 
 ## Deployed App
 The app is now up and running and can be accessed at https://friend-finder112.herokuapp.com/.
