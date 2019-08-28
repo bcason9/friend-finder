@@ -13,15 +13,15 @@ This app reqires express.js, as well as several packages via NPM (see package.js
 
 Home Page:
 
-![](app/public/assets/images/SSHome.jpg)
+![](app/public/assets/SSHome.jpg)
 
 Survey:
 
-![](app/public/assets/images/SSSurvey.jpg)
+![](app/public/assets/SSSurvey.jpg)
 
 Results:
 
-![](app/public/assets/images/SSResult.jpg)
+![](app/public/assets/SSResult.jpg)
 
 # Future Development
 
